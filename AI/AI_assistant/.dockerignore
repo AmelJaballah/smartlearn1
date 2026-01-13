@@ -1,0 +1,55 @@
+# Docker Build Ignore File
+# Exclude unnecessary files from Docker build context
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# Documentation
+docs/
+*.md
+!requirement.txt
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Data files
+embeddings/
+processed3_data/
+chunked_data/
+
+# Include the prebuilt Chroma index in the image (needed for Azure Container Apps)
+!chroma_db/
+!chroma_db/**

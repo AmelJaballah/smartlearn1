@@ -1,0 +1,70 @@
+[
+  {
+    "query": "Explain the Pythagorean theorem and give me an example.",
+    "retrieval_time": 7.307253122329712,
+    "generation_time": 16.842121839523315,
+    "total_time": 24.149374961853027,
+    "num_docs_retrieved": 3,
+    "answer_word_count": 233,
+    "precision": 0.3333333333333333,
+    "recall": 0.2,
+    "hit_rate": 1.0,
+    "context_overlap_ratio": 0.6052631578947368,
+    "sections_retrieved": [
+      "remark",
+      "remark",
+      "theorem"
+    ]
+  },
+  {
+    "query": "What is a matrix? Define it clearly.",
+    "retrieval_time": 3.149855852127075,
+    "generation_time": 7.681763648986816,
+    "total_time": 10.831619501113892,
+    "num_docs_retrieved": 3,
+    "answer_word_count": 123,
+    "precision": 1.0,
+    "recall": 1.0,
+    "hit_rate": 1.0,
+    "context_overlap_ratio": 0.759493670886076,
+    "sections_retrieved": [
+      "definition",
+      "definition",
+      "definition"
+    ]
+  },
+  {
+    "query": "How do you prove the fundamental theorem of algebra?",
+    "retrieval_time": 2.216063976287842,
+    "generation_time": 12.888081073760986,
+    "total_time": 15.104145050048828,
+    "num_docs_retrieved": 3,
+    "answer_word_count": 264,
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "hit_rate": 1.0,
+    "context_overlap_ratio": 0.7467532467532467,
+    "sections_retrieved": [
+      "proof",
+      "proof",
+      "theorem"
+    ]
+  },
+  {
+    "query": "Show me examples of solving quadratic equations.",
+    "retrieval_time": 3.189086437225342,
+    "generation_time": 15.342668056488037,
+    "total_time": 18.53175449371338,
+    "num_docs_retrieved": 3,
+    "answer_word_count": 271,
+    "precision": 0.3333333333333333,
+    "recall": 0.25,
+    "hit_rate": 1.0,
+    "context_overlap_ratio": 0.5481481481481482,
+    "sections_retrieved": [
+      "example",
+      "remark",
+      "remark"
+    ]
+  }
+]
