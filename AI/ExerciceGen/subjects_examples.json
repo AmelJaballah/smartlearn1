@@ -1,0 +1,330 @@
+{
+    "total_records_with_subject": 2367835,
+    "subjects": {
+        "Algebra": {
+            "count": 486111,
+            "examples": [
+                {
+                    "id": 415420,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Find the maximum value of\n\\[\\frac{x^2 + 4x + 4}{\\sqrt{x^2+4x+4}+x}\\]for $x \\geq -2.$",
+                    "response": "Let's simplify the given expression first:\n\\[ \\frac{x^2 + 4x + 4}{\\sqrt{x^2 + 4x + 4} + x} \\]\n\nNotice that $x^2 + 4x + 4 = (x + 2)^2$. Therefore, the expression becomes:\n\\[ \\frac{(x + 2)^2}{\\sqrt{(x + 2)^2} + x} \\]\n\nSince $\\sqrt{(x + 2)^2} = |x + 2|$, we have:\n\\[ \\frac{(x + 2)^2}{|x + 2| + x} \\]\n\nWe are given that $x \\geq -2$, which means $x + 2 \\geq 0$. Hence, $|x + 2| = x + 2$. So, the expression simplifies to:\n\\[ \\frac{(x + 2)^2}{x + 2 + x} = \\frac{(x + 2)^2}{2x + 2} \\]\n\nTo find the maximum value, let's simplify further:\n\\[ \\frac{(x + 2)^2}{2(x + 1)} \\]\n\nThis can be rewritten as:\n\\[ \\frac{x + 2}{2} \\cdot \\frac{x + 2}{x + 1} \\]\n\nLet $y = \\frac{x + 2}{x + 1}$. Then, $x + 2 = y(x + 1) = xy + y$, which implies $x = \\frac{y - 2}{y - 1}$.\n\nSubstituting this back into the expression, we get:\n\\[ \\frac{1}{2} \\cdot y \\]\n\nNow, we need to find the maximum value of $y = \\frac{x + 2}{x + 1}$.\n\nNotice that $y$ is a decreasing function of $x$ for $x \\geq -2$. Therefore, to maximize $y$, we need to minimize $x$.\n\nSince $x \\geq -2$, the minimum value of $x$ is $-2$. However, substituting $x = -2$ would make the denominator of $y$ zero.\n\nSo, we consider the limit as $x$ approaches $-2$ from the right:\n\\[ \\lim_{x \\to -2^+} \\frac{x + 2}{x + 1} = \\lim_{x \\to -2^+} \\frac{0}{-1} = 0 \\]\n\nHence, the maximum value of the expression is:\n\\[ \\frac{1}{2} \\cdot 4 = \\boxed{2} \\]",
+                    "extracted_answer": "2",
+                    "subject": "Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 4
+                },
+                {
+                    "id": 415422,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Emily wants to figure out when her great-grandfather was born. She knows her great-grandfather's older cousin was born in 1908, his older brother was born in 1914, and the gap between her great-grandfather's birth year and his brother's birth year is three times the gap between the older cousin's birth year and the older brother's birth year. What year was Emily's great-grandfather born?",
+                    "response": "Let's break this down step by step:\n\n* The gap between the older cousin's birth year (1908) and the older brother's birth year (1914) is 6 years.\n* The gap between Emily's great-grandfather's birth year and his brother's birth year is three times this gap, which is 3 * 6 = 18 years.\n* Since the older brother was born in 1914, Emily's great-grandfather was born 18 years later than this. \nHowever, the problem states that the gap is between her great-grandfather's birth year and his brother's birth year. Since her great-grandfather is the younger brother, his birth year should be after his brother's birth year.\nThus we should add the gap of 18 years to his brother's birth year of 1914.\nThus, we have 1914 + 18 = 1932.\nSo Emily's great-grandfather was born in \\boxed{1932}.",
+                    "extracted_answer": "1932",
+                    "subject": "Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 3
+                }
+            ]
+        },
+        "Geometry": {
+            "count": 267182,
+            "examples": [
+                {
+                    "id": 415432,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In triangle $ABC$, the angle bisectors $AD$, $BE$, and $CF$ intersect at the incenter $I$. If $\\angle ABC = 25^\\circ$ and $\\angle ACB = 35^\\circ$, then find the measure of $\\angle BIC$, in degrees.",
+                    "response": "We can use the fact that the angle bisectors of a triangle intersect at the incenter $I$. We also know that $\\angle ABC = 25^\\circ$ and $\\angle ACB = 35^\\circ$.\n\nSince the sum of the angles in a triangle is $180^\\circ$, we have:\n\\[ \\angle CAB = 180^\\circ - \\angle ABC - \\angle ACB = 180^\\circ - 25^\\circ - 35^\\circ = 120^\\circ \\]\n\nThe angle bisectors divide the angles into two equal parts, so:\n\\[ \\angle BAD = \\frac{1}{2} \\angle BAC = \\frac{1}{2} (120^\\circ) = 60^\\circ \\]\n\\[ \\angle BAI = 60^\\circ \\]\n\nSimilarly, for angle $ABC$:\n\\[ \\angle ABI = \\frac{1}{2} \\angle ABC = \\frac{1}{2} (25^\\circ) = 12.5^\\circ \\]\n\nAnd for angle $ACB$:\n\\[ \\angle ACI = \\frac{1}{2} \\angle ACB = \\frac{1}{2} (35^\\circ) = 17.5^\\circ \\]\n\nNow, to find $\\angle BIC$, we can use the fact that the sum of the angles in a triangle is $180^\\circ$. In triangle $BIC$:\n\\[ \\angle BIC = 180^\\circ - \\angle IBC - \\angle ICB = 180^\\circ - 12.5^\\circ - 17.5^\\circ = 150^\\circ \\]\n\nSo, the measure of $\\angle BIC$ is $150^\\circ$.\n\nThus, the answer is:\n\\[ \\boxed{150} \\]",
+                    "extracted_answer": "150",
+                    "subject": "Geometry",
+                    "format": "Problem Solving",
+                    "difficulty": 3
+                },
+                {
+                    "id": 415453,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In triangle $DEF,$ $DF = EF = 7.$  Let $G$ be a point on $\\overline{DE}$ so that $DG = 8$ and $FG = 3.$  Find the length of the median from vertex $F$ to side $\\overline{DE}$.",
+                    "response": "Use the Pythagorean Theorem to find the length of the median from vertex $F$ to side $\\overline{DE}$.\n\n1. Let $M$ be the midpoint of $\\overline{DE}$.\n2. Draw altitude $\\overline{FH}$ from vertex $F$ to side $\\overline{DE}$.\n3. Use the Pythagorean Theorem in right triangle $\\triangle FHD$ to find $FH$:\n\\[ FH = \\sqrt{7^2 - 4^2} = \\sqrt{49 - 16} = \\sqrt{33} \\]\n\n4. Use the Pythagorean Theorem in right triangle $\\triangle FHM$ to find $FM$:\n\\[ FM = \\sqrt{FH^2 + HM^2} = \\sqrt{33 + 4^2} = \\sqrt{33 + 16} = \\sqrt{49} = \\boxed{7} \\]",
+                    "extracted_answer": "7",
+                    "subject": "Geometry",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                }
+            ]
+        },
+        "Calculus": {
+            "count": 260182,
+            "examples": [
+                {
+                    "id": 415442,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Find the value of the infinite product\n$$\\prod_{n=1}^{\\infty}\\left(1+\\frac{2}{n^2-1}\\right).$$",
+                    "response": "First, notice that\n\\[ 1 + \\frac{2}{n^2 - 1} = \\frac{n^2 - 1 + 2}{n^2 - 1} = \\frac{n^2 + 1}{n^2 - 1} = \\frac{(n + 1)(n - 1)}{(n - 1)(n + 1)} = \\frac{n + 1}{n - 1} \\]\n\nNow, we can write the infinite product as\n\\[ \\prod_{n = 1}^{\\infty} \\left(1 + \\frac{2}{n^2 - 1}\\right) = \\prod_{n = 1}^{\\infty} \\left(\\frac{n + 1}{n - 1}\\right) \\]\n\nThis can be expanded as\n\\[ \\frac{2}{0} \\cdot \\frac{3}{1} \\cdot \\frac{4}{2} \\cdot \\frac{5}{3} \\cdot \\frac{6}{4} \\cdot \\ldots \\]\n\nNotice that every term in the numerator cancels with the corresponding term in the denominator of the next fraction, except for the first and last terms.\n\nHowever, this is an infinite product, so there is no last term to cancel with the numerator of the first fraction.\n\nBut we can see that the product of the first few terms is\n\\[ \\frac{2}{0} \\cdot \\frac{3}{1} \\cdot \\frac{4}{2} \\cdot \\frac{5}{3} \\cdot \\frac{6}{4} = \\frac{6}{0} \\]\n\nThe pattern continues, and the product of the first $n$ terms is\n\\[ \\frac{n + 1}{1} \\cdot \\frac{n + 2}{2} \\cdot \\ldots \\cdot \\frac{n + n}{n} = \\frac{2n}{n - 1} \\]\n\nTaking the limit as $n$ approaches infinity, we get\n\\[ \\lim_{n \\to \\infty} \\frac{2n}{n - 1} = 2 \\]\n\nTherefore, the infinite product is\n\\[ \\prod_{n = 1}^{\\infty} \\left(1 + \\frac{2}{n^2 - 1}\\right) = \\boxed{2} \\]",
+                    "extracted_answer": "2",
+                    "subject": "Calculus",
+                    "format": "Problem Solving",
+                    "difficulty": 6
+                },
+                {
+                    "id": 415456,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Let $x$ be a positive real number. Find the minimum possible value of $$\\frac{x+\\sqrt{1+x^2}}{x^2+1}.$$",
+                    "response": "To find the minimum value of the expression, we can analyze it step-by-step.\n\nGiven expression:\n\\[ \\frac{x+\\sqrt{1+x^2}}{x^2+1} \\]\n\nLet's rationalize the numerator by multiplying both numerator and denominator by $x - \\sqrt{1 + x^2}$:\n\\[ \\frac{x+\\sqrt{1+x^2}}{x^2+1} \\cdot \\frac{x-\\sqrt{1+x^2}}{x-\\sqrt{1+x^2}} = \\frac{(x+\\sqrt{1+x^2})(x-\\sqrt{1+x^2})}{(x^2+1)(x-\\sqrt{1+x^2})} \\]\n\nUsing the difference of squares identity $a^2 - b^2 = (a+b)(a-b)$ in the numerator:\n\\[ \\frac{x^2 - (1+x^2)}{(x^2+1)(x-\\sqrt{1+x^2})} = \\frac{-1}{(x^2+1)(x-\\sqrt{1+x^2})} \\]\n\nNow, we want to simplify this expression further to understand its behavior better.\n\nNotice that as $x$ increases, the denominator increases faster because it involves $x^2$ and $x$ inside the square root. Therefore, as $x$ gets larger, the fraction gets smaller.\n\nHowever, we are interested in the minimum value. To find it, let's consider the behavior of the function as $x$ approaches 0, since $x$ is a positive real number.\n\nAs $x$ approaches 0, the expression approaches:\n\\[ \\lim_{x \\to 0} \\frac{x+\\sqrt{1+x^2}}{x^2+1} = \\frac{0+\\sqrt{1+0^2}}{0^2+1} = \\sqrt{1} = 1 \\]\n\nBut since our manipulation involved rationalizing and simplifying, let's ensure we haven't altered the original expression's behavior. Our goal was to understand how the expression changes as $x$ varies, not to find an exact minimum through simplification alone.\n\nGiven the nature of the problem, and realizing the simplification provided insight into the behavior but not a direct path to the minimum, we recognize that the minimum value occurs when the denominator is maximized relative to the numerator. The original expression, due to the square root, does not easily lend itself to traditional optimization techniques like differentiation in its given form without a more complex analysis involving calculus.\n\nHowever, recognizing the oversight in directly applying the simplified form to deduce the minimum, we should approach the problem with calculus for a rigorous solution:\n\nLet $f(x) = \\frac{x + \\sqrt{1+x^2}}{x^2+1}$. To find the minimum, we would typically take the derivative of $f(x)$ with respect to $x$, set it equal to zero, and solve for $x$. However, due to the complexity of the expression and the error in simplification that led to an incorrect method for finding the minimum, we must correct our approach.\n\nCorrect Approach:\n\nThe actual process involves recognizing that the expression given does not easily simplify to a form where the minimum is apparent without calculus. The correct method would involve taking the derivative of the original expression and setting it equal to zero to find critical points, which was not done here.\n\nGiven the error in methodology and the complexity of directly solving for the minimum with the provided steps, the key insight should be that simplification alone does not reveal the minimum, and calculus is needed for an accurate solution.\n\nHowever, the initial problem setup and incorrect simplification attempt suggest a misunderstanding of the problem's requirements for a solution that directly leads to the minimum value through algebraic manipulation alone.\n\nGiven the setup, the correct realization should be that without applying calculus or a more direct optimization technique suited for the given expression, pinpointing the exact minimum value is not straightforward from the simplified expression provided.\n\nTherefore, acknowledging the mistake in the process and the need for a calculus-based solution or a more appropriate optimization technique, the answer provided here does not accurately reflect the solution to the problem as initially presented.\n\nRealizing the mistake and the limitations of the provided steps in achieving the solution, the approach should involve recognizing the necessity of calculus or a similar method to accurately determine the minimum of the given expression.\n\nThe final answer is: $\\boxed{1}$",
+                    "extracted_answer": "1",
+                    "subject": "Calculus",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                }
+            ]
+        },
+        "Arithmetic": {
+            "count": 259556,
+            "examples": [
+                {
+                    "id": 415418,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In an arithmetic sequence, the sum of the first 25 terms is 1500. If the sum of the first 5 terms is 75, what is the value of the 25th term?",
+                    "response": "Let's denote the first term of the sequence as $a$ and the common difference as $d$.\n\nWe know that the sum of the first $n$ terms of an arithmetic sequence is given by:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nWe are given that the sum of the first 25 terms is 1500, so:\n\\[ 1500 = \\frac{25}{2} (2a + 24d) \\Rightarrow 120 = 2a + 24d \\Rightarrow 60 = a + 12d \\]\n\nWe are also given that the sum of the first 5 terms is 75, so:\n\\[ 75 = \\frac{5}{2} (2a + 4d) \\Rightarrow 30 = 2a + 4d \\Rightarrow 15 = a + 2d \\]\n\nNow we have two equations:\n\\begin{align*}\n60 = a + 12d \\quad &(1) \\\\\n15 = a + 2d \\quad &(2)\n\\end{align*}\n\nSubtract (2) from (1):\n\\[ 60 - 15 = (a + 12d) - (a + 2d) \\Rightarrow 45 = 10d \\Rightarrow d = 4.5 \\]\n\nSubstitute $d = 4.5$ into (2) to find $a$:\n\\[ 15 = a + 2(4.5) \\Rightarrow 15 = a + 9 \\Rightarrow a = 6 \\]\n\nNow that we have $a$ and $d$, we can find the 25th term:\n\\[ t_{25} = a + (25-1)d = 6 + 24(4.5) = 6 + 108 = 114 \\]\n\nThus, the 25th term is $\\boxed{114}$.",
+                    "extracted_answer": "114",
+                    "subject": "Arithmetic",
+                    "format": "Problem Solving",
+                    "difficulty": 3
+                },
+                {
+                    "id": 415421,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In a science class, students measured the average height of plants in two separate trays. The average height of the eight plants in Tray A was 15 cm, while the average height of the seven plants in Tray B was 20 cm. What is the average height of the 15 plants from both trays?",
+                    "response": "To find the average height of the 15 plants from both trays, we first need to find the total height of all the plants in each tray and then add these totals together.\n\nFor Tray A with 8 plants and an average height of 15 cm, the total height of all plants is 8 * 15 = 120 cm.\n\nFor Tray B with 7 plants and an average height of 20 cm, the total height of all plants is 7 * 20 = 140 cm.\n\nThe total height of all 15 plants from both trays is 120 cm + 140 cm = 260 cm.\n\nTo find the average height, we divide this total by the number of plants, which is 15.\n\nSo, the average height is 260 cm / 15 = 17.33 cm.\n\nThus, the average height of the 15 plants from both trays is \\boxed{17.33} cm.",
+                    "extracted_answer": "17.33",
+                    "subject": "Arithmetic",
+                    "format": "Problem Solving",
+                    "difficulty": 1
+                }
+            ]
+        },
+        "Number Theory": {
+            "count": 212567,
+            "examples": [
+                {
+                    "id": 415416,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Determine the digit $d$ such that the five-digit number $1234d$ is a multiple of 6 and the sum of its digits is a perfect square.",
+                    "response": "For a number to be a multiple of 6, it must be both a multiple of 2 and a multiple of 3.\n\nTo be a multiple of 2, the last digit must be even. So, $d$ can be one of the following digits: 0, 2, 4, 6, or 8.\n\nTo be a multiple of 3, the sum of the digits must be a multiple of 3. The sum of the digits of $1234d$ is $1 + 2 + 3 + 4 + d = 10 + d$. So, for the sum to be a multiple of 3, $d$ must be one of the following digits: 2, 5, or 8.\n\nSince $d$ must be both even and one of the digits 2, 5, or 8, the only possible values for $d$ are 2 or 8.\n\nNow, we need to find the digit that makes the sum of the digits a perfect square. The sum of the digits is $10 + d$. So, we need to find the digit that makes $10 + d$ a perfect square.\n\nFor $d = 2$, we have $10 + 2 = 12$, which is not a perfect square.\n\nFor $d = 8$, we have $10 + 8 = 18$, which is not a perfect square.\n\nHowever, we can also consider the digit 5, which makes the sum of the digits $10 + 5 = 15$, not a perfect square, but we can also consider $d = 4$, which makes the sum of the digits $10 + 4 = 14$, which is not a perfect square.\n\nBut we can also consider $d = 6$, which makes the sum of the digits $10 + 6 = 16$, which is a perfect square.\n\nTherefore, the value of $d$ is $\\boxed{6}$.",
+                    "extracted_answer": "6",
+                    "subject": "Number Theory",
+                    "format": "Problem Solving",
+                    "difficulty": 3
+                },
+                {
+                    "id": 415419,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Let $a$ be the smallest positive integer such that $a$, $a+1$, and $a+2$ have the same number of positive divisors. Find $a$.",
+                    "response": "Since we need to find the smallest positive integer $a$ such that $a$, $a+1$, and $a+2$ have the same number of positive divisors, we can start by testing the first few positive integers.\n\nWe can start by testing the positive integer 1. The number of positive divisors for 1 is 1. The number of positive divisors for 2 is 2. The number of positive divisors for 3 is 2. Since 1, 2, and 3 do not have the same number of positive divisors, 1 is not the answer.\n\nNext, we can test the positive integer 2. The number of positive divisors for 2 is 2. The number of positive divisors for 3 is 2. The number of positive divisors for 4 is 3. Since 2, 3, and 4 do not have the same number of positive divisors, 2 is not the answer.\n\nWe can continue testing the positive integers until we find one that satisfies the condition.\n\nThe first positive integer that satisfies the condition is $a = \\boxed{214}$, since $214$, $215$, and $216$ all have 4 positive divisors.",
+                    "extracted_answer": "214",
+                    "subject": "Number Theory",
+                    "format": "Problem Solving",
+                    "difficulty": 7
+                }
+            ]
+        },
+        "Probability & Statistics": {
+            "count": 197572,
+            "examples": [
+                {
+                    "id": 415417,
+                    "source": "OpenMathInstruct-2",
+                    "question": "A bag contains 30 marbles, each labeled with a different integer from 1 to 30. Rachel randomly selects one marble from the bag. What is the probability that the number on the marble she chooses is a multiple of 3 or 7? Express your answer as a common fraction.",
+                    "response": "The total number of marbles is 30.\n\nMultiples of 3 between 1 and 30: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30.\nThere are 10 multiples of 3.\n\nMultiples of 7 between 1 and 30: 7, 14, 21, 28.\nThere are 4 multiples of 7.\n\nHowever, 21 is counted twice as it is a multiple of both 3 and 7, so we need to subtract 1 to avoid double counting.\n\nThe total number of favorable outcomes (multiples of 3 or 7) is 10 + 4 - 1 = 14 - 1 = 13\n\nThe probability of selecting a marble that is a multiple of 3 or 7 is:\n\\[ P = \\frac{13}{30} \\]\n\nThe answer is:\n\\[ \\boxed{\\frac{13}{30}} \\]",
+                    "extracted_answer": "\\frac{13}{30}",
+                    "subject": "Probability & Statistics",
+                    "format": "Problem Solving",
+                    "difficulty": 2
+                },
+                {
+                    "id": 415466,
+                    "source": "OpenMathInstruct-2",
+                    "question": "A fair coin is flipped repeatedly until a sequence of three consecutive heads or tails is obtained. What is the probability that the sequence of three consecutive heads is obtained before the sequence of three consecutive tails?",
+                    "response": "Let $W$ be the event that we obtain three consecutive heads before we obtain three consecutive tails.\n\nTo calculate the probability of $W$, we can use the fact that the probability of obtaining a head or a tail on a single flip is $\\frac{1}{2}$.\n\nWe can break down the problem into cases based on the outcome of the first two flips.\n\n1. If the first two flips are heads, we need to get a head on the third flip to win. The probability of this happening is $\\frac{1}{2} \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{8}$.\n\n2. If the first two flips are tails, we need to start over. The probability of this happening is $\\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$.\n\n3. If the first flip is a head and the second flip is a tail, we need to start over. The probability of this happening is $\\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$.\n\n4. If the first flip is a tail and the second flip is a head, we need to start over. The probability of this happening is $\\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$.\n\nLet $p$ be the probability of $W$. Then, we have:\n\\[ p = \\frac{1}{8} + \\frac{1}{4}p + \\frac{1}{4}p + \\frac{1}{4}p \\Rightarrow p = \\frac{1}{8} + \\frac{3}{4}p \\Rightarrow \\frac{1}{4}p = \\frac{1}{8} \\Rightarrow p = \\frac{1}{2} \\]\n\nSo, the probability that the sequence of three consecutive heads is obtained before the sequence of three consecutive tails is $\\boxed{\\frac{1}{2}}$.",
+                    "extracted_answer": "\\frac{1}{2}",
+                    "subject": "Probability & Statistics",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                }
+            ]
+        },
+        "Logic & Discrete Math": {
+            "count": 139400,
+            "examples": [
+                {
+                    "id": 416147,
+                    "source": "OpenMathInstruct-2",
+                    "question": "A group of people want to create a network of one-way roads between five cities such that it is possible to travel between any two cities. What is the minimum number of roads needed to achieve this?",
+                    "response": "To find the minimum number of roads needed, we can use the concept of a strongly connected graph. In a strongly connected graph, there is a path from every vertex to every other vertex.\n\nFor a graph with $n$ vertices to be strongly connected, it must have at least $n$ edges. However, this is not sufficient, because we need to ensure that we can travel between any two cities.\n\nOne way to achieve this is to create a cycle that passes through all $n$ vertices. This requires $n$ edges. However, this still doesn't allow us to travel between any two cities.\n\nTo fix this, we can add one more edge that connects one city to another city that is not adjacent to it in the cycle. This will create a shortcut and allow us to travel between any two cities.\n\nTherefore, the minimum number of roads needed is $n + 1$, where $n$ is the number of cities.\n\nIn this case, we have $n = 5$ cities, so the minimum number of roads needed is:\n\\[ 5 + 1 = \\boxed{6} \\]",
+                    "extracted_answer": "6",
+                    "subject": "Logic & Discrete Math",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                },
+                {
+                    "id": 418326,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In a certain city, there are three types of public transportation: buses, trolleys, and trams. Each type of transportation has a different fare: $b$, $t$, and $m$ dollars, respectively. Three tourists, Alex, Ben, and Chris, each take a different type of transportation and pay the corresponding fare. They don't know which fare corresponds to which type of transportation, but they share the amounts they paid with each other. Only Alex is able to determine which type of transportation he took. Find the sum of all possible values that Alex paid.",
+                    "response": "To determine which type of transportation Alex took, he must have paid a fare that is unique among the three options. This means that the other two fares must be equal.\n\nThere are three possible scenarios:\n\n1. $b = t \\neq m$\n2. $b = m \\neq t$\n3. $t = m \\neq b$\n\nIn each scenario, Alex pays the unique fare.\n\nThe sum of all possible values that Alex paid is the sum of the unique fares in each scenario:\n\n$b + t + m$\n\nHowever, since we don't know the actual values of $b$, $t$, and $m$, we can't determine the exact sum.\n\nBut we can express the sum as:\n\\[ b + t + m \\]\n\nSince the problem doesn't provide specific values for $b$, $t$, and $m$, we can't give a numerical answer.\n\nHowever, it seems that the problem is asking for a specific numerical answer.\n\nIn that case, we need to reconsider our approach.\n\nLet's assume that the fares are integers.\n\nIn that case, we can try to find the smallest possible values for $b$, $t$, and $m$ that satisfy the conditions.\n\nOne possible solution is:\n\\[ b = 1, t = 1, m = 2 \\]\n\nIn this case, Alex pays $2.\n\nAnother possible solution is:\n\\[ b = 1, t = 2, m = 1 \\]\n\nIn this case, Alex pays $2.\n\nThe third possible solution is:\n\\[ b = 2, t = 1, m = 1 \\]\n\nIn this case, Alex pays $2.\n\nIn all three cases, Alex pays $2.\n\nTherefore, the sum of all possible values that Alex paid is:\n\\[ 2 + 2 + 2 = \\boxed{6} \\]",
+                    "extracted_answer": "6",
+                    "subject": "Logic & Discrete Math",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                }
+            ]
+        },
+        "Linear Algebra": {
+            "count": 134709,
+            "examples": [
+                {
+                    "id": 415424,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Given $\\|\\mathbf{v}\\| = 2$ and $\\|\\mathbf{w}\\| = 3$, find $\\|2\\mathbf{v} + 5\\mathbf{w}\\|$ when the angle between $\\mathbf{v}$ and $\\mathbf{w}$ is $\\frac{\\pi}{3}$.",
+                    "response": "Recall the formula for the magnitude of a sum of vectors:\n\\[ \\| \\mathbf{u} + \\mathbf{v} \\| = \\sqrt{ \\| \\mathbf{u} \\|^2 + \\| \\mathbf{v} \\|^2 + 2 \\| \\mathbf{u} \\| \\| \\mathbf{v} \\| \\cos \\theta } \\]\n\nwhere $\\theta$ is the angle between $\\mathbf{u}$ and $\\mathbf{v}$.\n\nWe have:\n\\[ \\mathbf{u} = 2\\mathbf{v} \\text{ and } \\mathbf{v} = 5\\mathbf{w} \\]\n\nGiven that $\\| \\mathbf{v} \\| = 2$ and $\\| \\mathbf{w} \\| = 3$, we can find $\\| 2\\mathbf{v} \\|$ and $\\| 5\\mathbf{w} \\|$:\n\\[ \\| 2\\mathbf{v} \\| = 2 \\| \\mathbf{v} \\| = 2(2) = 4 \\]\n\n\\[ \\| 5\\mathbf{w} \\| = 5 \\| \\mathbf{w} \\| = 5(3) = 15 \\]\n\nThe angle between $\\mathbf{v}$ and $\\mathbf{w}$ is $\\frac{\\pi}{3}$.\n\nSubstitute the values into the formula:\n\\[ \\| 2\\mathbf{v} + 5\\mathbf{w} \\| = \\sqrt{ (4)^2 + (15)^2 + 2(4)(15) \\cos \\frac{\\pi}{3} } \\]\n\n\\[ = \\sqrt{ 16 + 225 + 120 \\left( \\frac{1}{2} \\right) } \\]\n\n\\[ = \\sqrt{ 16 + 225 + 60 } \\]\n\n\\[ = \\sqrt{ 301 } \\]\n\n\\[ = \\boxed{\\sqrt{301}} \\]",
+                    "extracted_answer": "\\sqrt{301}",
+                    "subject": "Linear Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 4
+                },
+                {
+                    "id": 415425,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Let $\\mathbf{p}$ be the projection of $\\mathbf{v}$ onto $\\mathbf{w},$ and let $\\mathbf{q}$ be the projection of $\\mathbf{p}$ onto $\\mathbf{v}.$  If $\\frac{\\|\\mathbf{p}\\|}{\\|\\mathbf{v}\\|} = \\frac{5}{7},$ then find $\\frac{\\|\\mathbf{q}\\|}{\\|\\mathbf{v}\\|}.$\n\n\n\nThe line $y=ax+b$ is tangent to the curve $y=x^3-x^2-3x+2$ at the point $(1, -1).$  Find $a.$",
+                    "response": "Since the line $y = ax + b$ is tangent to the curve $y = x^3 - x^2 - 3x + 2$ at the point $(1, -1)$, the line and the curve intersect at this point.\n\n1. The line $y = ax + b$ intersects the point $(1, -1)$, so:\n\\[ -1 = a(1) + b \\Rightarrow -1 = a + b \\quad \\text{(Equation 1)} \\]\n\n2. The curve $y = x^3 - x^2 - 3x + 2$ intersects the point $(1, -1)$, so:\n\\[ -1 = 1^3 - 1^2 - 3(1) + 2 \\Rightarrow -1 \\Rightarrow -1 \\]\n\nThe slope of the line $y = ax + b$ is $a$. Since this line is tangent to the curve $y = x^3 - x^2 - 3x + 2$ at $(1, -1)$, the slope of the line must be equal to the derivative of the curve at $x = 1$.\n\nLet's find the derivative of the curve $y = x^3 - x^2 - 3x + 2$:\n\\[ \\frac{dy}{dx} = 3x^2 - 2x - 3 \\]\n\nEvaluate the derivative at $x = 1$:\n\\[ \\frac{dy}{dx} |_{x=1} = 3(1)^2 - 2(1) - 3 = 3 - 2 - 3 = -2 \\]\n\nSince the slope of the line is equal to the derivative of the curve at $x = 1$, we have:\n\\[ a = -2 \\]\n\nWe can use Equation 1 to find $b$:\n\\[ -1 = a + b \\Rightarrow -1 = -2 + b \\Rightarrow b = 1 \\]\n\nSo, the equation of the line is:\n\\[ y = -2x + 1 \\]\n\nThe answer is $\\boxed{-2}$.",
+                    "extracted_answer": "-2",
+                    "subject": "Linear Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 6
+                }
+            ]
+        },
+        "Pre-Algebra": {
+            "count": 110690,
+            "examples": [
+                {
+                    "id": 415447,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Problem:\nA snail is at the bottom of a 20-foot well. Each day, it climbs up 3 feet, but at night, it slips back 2 feet. How many days will it take for the snail to reach the top of the well?\n\nSolution:\nWe can model the snail's progress using a linear recurrence relation:\n\nan = 3n - 2(n-1)\n\nwhere an is the height of the snail on the nth day.\n\nWe can rewrite this recurrence relation as:\n\nan = an-1 + 1\n\nThis is a simple linear recurrence relation with a constant term of 1. We can solve this recurrence relation using the formula:\n\nan = 1 + (an-1 - 1)\n\nSince the snail starts at the bottom of the well, a0 = 0. Substituting this into the formula, we get:\n\na1 = 1 + (0 - 1) = 0\na2 = 1 + (0 - 1) = 0\na3 = 1 + (0 - 1) = 0\n\nNotice that the snail's progress follows a pattern: it climbs up 3 feet and slips back 2 feet, resulting in a net gain of 1 foot per day. Therefore, the snail will reach the top of the well after 18 days.\n\nThe final answer is 18.",
+                    "response": "Each day, the snail climbs 3 feet and slips back 2 feet at night, for a net gain of 1 foot. To reach the top of a 20-foot well, the snail needs to climb 18 feet (since it will reach 20 feet on the 18th day and then slip back 2 feet at night, but it will have already reached the top). Therefore, it will take the snail 18 days to reach the top of the well.\n\nThe final answer is $\\boxed{18}$.",
+                    "extracted_answer": "18",
+                    "subject": "Pre-Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 2
+                },
+                {
+                    "id": 415494,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Akira's motorcycle has a fuel tank that can hold 6 gallons of gasoline. During a trip, she uses 3/4 of a gallon for every 15 miles traveled. If the current price of gasoline is $3.25 per gallon, what is the maximum distance Akira can travel on a full tank, assuming she already has the money to fill it up, and how much will she spend on gasoline for the entire trip? (Express your answer in miles and round the cost to the nearest cent.)",
+                    "response": "To find the maximum distance Akira can travel, we need to determine how many 15-mile segments she can cover with a full tank of 6 gallons of gasoline.\n\nSince each 15-mile segment uses 3/4 gallon, we can find the number of segments by dividing the total gallons by the amount used per segment:\n\\[ \\frac{6}{3/4} = \\frac{6 \\cdot 4}{3} = 8 \\]\n\nAkira can travel 8 segments of 15 miles each, so the maximum distance is:\n\\[ 8 \\cdot 15 = 120 \\text{ miles} \\]\n\nTo find the total cost of gasoline for the entire trip, we multiply the total gallons used by the price per gallon. Since Akira has a full tank of 6 gallons, the total cost is:\n\\[ 6 \\cdot 3.25 = 19.50 \\]\n\nTherefore, Akira can travel a maximum distance of 120 miles on a full tank, and she will spend $19.50 on gasoline for the entire trip.\n\nHere is the answer in the required format:\n\\[ \\boxed{120} \\]",
+                    "extracted_answer": "120",
+                    "subject": "Pre-Algebra",
+                    "format": "Problem Solving",
+                    "difficulty": 2
+                }
+            ]
+        },
+        "Combinatorics": {
+            "count": 107296,
+            "examples": [
+                {
+                    "id": 415415,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Seven actors audition for a play that has four main characters: a king, a queen, a jester, and a narrator. The director is impressed by all of them and decides to choose four actors for the main characters and offer a smaller role to the remaining three. However, the director also wants to ensure that the actors who are chosen for the main characters have complementary personalities and can work well together. \n\nThere are some constraints on the casting:\n\n* Actor A cannot be in the same play as Actor B.\n* Actor C can only play the role of the jester.\n* Actor D cannot play the role of the king.\n\nHow many ways can the director cast the four main characters and assign the remaining actors to smaller roles, considering the given constraints?",
+                    "response": "To solve this problem, we need to consider the constraints given and count the number of possible ways to cast the four main characters and assign the remaining actors to smaller roles.\n\nFirst, let's address the constraint that Actor A cannot be in the same play as Actor B. This means that either Actor A or Actor B can be chosen for a main character role, but not both.\n\nNext, Actor C can only play the role of the jester. This means that the jester role is fixed and can only be played by Actor C.\n\nActor D cannot play the role of the king. This constraint limits the options for the king role.\n\nNow, let's count the possible ways to cast the main characters:\n\n1. Choose the king: Since Actor D cannot play the king, there are 5 options (Actors A, B, E, F, and G).\n2. Choose the queen: After choosing the king, there are 5 remaining actors to choose from for the queen role. However, if Actor A is chosen as the king, Actor B cannot be chosen as the queen, and vice versa. So, the actual number of options for the queen role depends on the choice of king.\n3. Choose the jester: This role is fixed and can only be played by Actor C.\n4. Choose the narrator: After choosing the king, queen, and jester, there are 4 remaining actors to choose from for the narrator role.\n\nConsidering the constraints and the choices for each role, we can calculate the total number of ways to cast the main characters.\n\nHowever, we also need to assign the remaining 3 actors to smaller roles. Since the order of assignment does not matter, this can be done in one way.\n\nLet's calculate the total number of ways to cast the main characters:\n\n* If Actor A is chosen as the king, there are 4 options for the queen (since Actor B cannot be chosen). Then, Actor C is fixed as the jester, and there are 4 options for the narrator. This gives 1 (choice of king) * 4 (choices of queen) * 1 (choice of jester) * 4 (choices of narrator) = 16 possibilities.\n* If Actor B is chosen as the king, there are 4 options for the queen (since Actor A cannot be chosen). Then, Actor C is fixed as the jester, and there are 4 options for the narrator. This gives 1 (choice of king) * 4 (choices of queen) * 1 (choice of jester) * 4 (choices of narrator) = 16 possibilities.\n* If one of the other actors (E, F, or G) is chosen as the king, there are 5 options for the queen (since neither Actor A nor Actor B is chosen as the king). Then, Actor C is fixed as the jester, and there are 4 options for the narrator. This gives 3 (choices of king) * 5 (choices of queen) * 1 (choice of jester) * 4 (choices of narrator) = 60 possibilities.\n\nAdding these possibilities together, we have a total of 16 + 16 + 60 = 32 + 60 = 92 ways to cast the main characters.\n\nSince the remaining 3 actors can be assigned to smaller roles in one way, the total number of ways to cast the four main characters and assign the remaining actors to smaller roles is 92.\n\nThe final answer is:\n\\[ \\boxed{92} \\]",
+                    "extracted_answer": "92",
+                    "subject": "Combinatorics",
+                    "format": "Problem Solving",
+                    "difficulty": 5
+                },
+                {
+                    "id": 415423,
+                    "source": "OpenMathInstruct-2",
+                    "question": "A group of 25 students are participating in a debate competition, where each student will engage in a series of one-on-one debates with every other student exactly once. The student who wins the most debates will be declared the winner. How many debates will take place before the winner can be determined?",
+                    "response": "To determine the number of debates before the winner can be determined, we need to find the total number of debates that will take place. Each student will debate every other student exactly once.\n\nThe number of debates for one student is the number of other students, which is 24.\n\nHowever, if we simply multiply 24 by 25 (the total number of students), we would be double-counting each debate (since, for example, the debate between student A and student B is the same as the debate between student B and student A).\n\nSo, to avoid double-counting, we divide this product by 2:\n\\[ \\text{Total number of debates} = \\frac{25 \\times 24}{2} \\]\n\n\\[ \\text{Total number of debates} = \\frac{600}{2} \\]\n\n\\[ \\text{Total number of debates} = 300 \\]\n\nTherefore, the number of debates that will take place before the winner can be determined is:\n\\[ \\boxed{300} \\]",
+                    "extracted_answer": "300",
+                    "subject": "Combinatorics",
+                    "format": "Problem Solving",
+                    "difficulty": 1
+                }
+            ]
+        },
+        "Trigonometry": {
+            "count": 85525,
+            "examples": [
+                {
+                    "id": 415414,
+                    "source": "OpenMathInstruct-2",
+                    "question": "In triangle $ABC$, we have $\\angle A = 30^\\circ$, $AB = 15$, and $AC = 18$. If $\\cos B = \\frac{BC}{AB}$, what is $BC$?",
+                    "response": "## Step 1: Apply the Law of Cosines to find the relationship between the sides of the triangle and the cosine of angle B.\nThe Law of Cosines states that for any triangle with sides of length a, b, and c opposite to angles A, B, and C respectively, c^2 = a^2 + b^2 - 2ab * cos(C). Here, we let a = BC, b = AB = 15, and c = AC = 18.\n\n## Step 2: Substitute the known values into the Law of Cosines equation.\n18^2 = BC^2 + 15^2 - 2*BC*15*cos(B).\n\n## Step 3: Simplify the equation.\n324 = BC^2 + 225 - 30*BC*cos(B).\n\n## Step 4: Use the given information that cos(B) = BC/AB to substitute for cos(B) in the equation.\n324 = BC^2 + 225 - 30*BC*(BC/15).\n\n## Step 5: Simplify the equation further.\n324 = BC^2 + 225 - 2*BC^2.\n\n## Step 6: Combine like terms and solve for BC^2.\n324 = -BC^2 + 225.\n\n## Step 7: Move terms around to isolate BC^2.\nBC^2 = 225 - 324.\n\n## Step 8: Perform the subtraction.\nBC^2 = -99.\n\n## Step 9: Recognize that a negative value under the square root is not possible for a length, indicating a mistake in previous steps. Re-evaluate the equation from step 2 and correct it by directly applying the given relationship cos(B) = BC/AB to find BC without needing to apply the Law of Cosines in the same manner.\nGiven that cos(B) = BC/AB, and knowing that AB = 15, we can write BC = 15*cos(B). However, we realize that without directly calculating cos(B) first, we incorrectly applied the formula.\n\n## Step 10: Correctly apply the Law of Cosines to solve for BC.\nFirst, note that angle A = 30 degrees. We should apply the Law of Cosines correctly considering the known angle A and sides AB and AC to find BC.\n\n## Step 11: Correctly apply the Law of Cosines formula considering angle A.\nBC^2 = AB^2 + AC^2 - 2*AB*AC*cos(A).\n\n## Step 12: Substitute the known values into the corrected Law of Cosines equation.\nBC^2 = 15^2 + 18^2 - 2*15*18*cos(30 degrees).\n\n## Step 13: Simplify the equation.\nBC^2 = 225 + 324 - 540*cos(30 degrees).\n\n## Step 14: Calculate cos(30 degrees).\ncos(30 degrees) = sqrt(3)/2.\n\n## Step 15: Substitute the value of cos(30 degrees) into the equation.\nBC^2 = 225 + 324 - 540*sqrt(3)/2.\n\n## Step 16: Simplify the equation.\nBC^2 = 549 - 270*sqrt(3).\n\n## Step 17: Solve for BC by taking the square root of both sides.\nBC = sqrt(549 - 270*sqrt(3)).\n\n## Step 18: Calculate the numerical value of BC.\nAfter calculating, we find that BC is approximately equal to a specific value once the correct arithmetic is applied.\n\nThe final answer is: $\\boxed{9}$",
+                    "extracted_answer": "9",
+                    "subject": "Trigonometry",
+                    "format": "Problem Solving",
+                    "difficulty": 4
+                },
+                {
+                    "id": 415427,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Compute the value of the following determinant:\n\\[\n\\begin{vmatrix} \\tan^2 \\frac{\\pi}{7} & \\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{3\\pi}{7} \\\\ \\tan^2 \\frac{4\\pi}{7} & \\tan^2 \\frac{5\\pi}{7} & \\tan^2 \\frac{6\\pi}{7} \\\\ \\tan^2 \\frac{7\\pi}{7} & \\tan^2 \\frac{8\\pi}{7} & \\tan^2 \\frac{9\\pi}{7} \\end{vmatrix}\n\\]\nAll the angles are in radians.",
+                    "response": "The key to this problem is to use the identity $\\tan(\\pi - x) = -\\tan(x)$.\n\nApply this identity to the elements in the matrix:\n\nFirst row:\n\\[ \\tan^2 \\frac{\\pi}{7}, \\tan^2 \\frac{2\\pi}{7}, \\tan^2 \\frac{3\\pi}{7} \\]\n\nSecond row:\n\\[ \\tan^2 \\frac{4\\pi}{7} = \\tan^2 \\left(\\pi - \\frac{3\\pi}{7}\\right) = \\tan^2 \\frac{3\\pi}{7} \\]\n\\[ \\tan^2 \\frac{5\\pi}{7} = \\tan^2 \\left(\\pi - \\frac{2\\pi}{7}\\right) = \\tan^2 \\frac{2\\pi}{7} \\]\n\\[ \\tan^2 \\frac{6\\pi}{7} = \\tan^2 \\left(\\pi - \\frac{\\pi}{7}\\right) = \\tan^2 \\frac{\\pi}{7} \\]\n\nThird row:\n\\[ \\tan^2 \\frac{7\\pi}{7} = \\tan^2 \\pi = 0 \\]\n\\[ \\tan^2 \\frac{8\\pi}{7} = \\tan^2 \\left(\\pi + \\frac{\\pi}{7}\\right) = \\tan^2 \\frac{\\pi}{7} \\]\n\\[ \\tan^2 \\frac{9\\pi}{7} = \\tan^2 \\left(\\pi + \\frac{2\\pi}{7}\\right) = \\tan^2 \\frac{2\\pi}{7} \\]\n\nSo, the matrix becomes:\n\\[\n\\begin{vmatrix}\n\\tan^2 \\frac{\\pi}{7} & \\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{3\\pi}{7} \\\\\n\\tan^2 \\frac{3\\pi}{7} & \\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{\\pi}{7} \\\\\n0 & \\tan^2 \\frac{\\pi}{7} & \\tan^2 \\frac{2\\pi}{7}\n\\end{vmatrix}\n\\]\n\nNow, expand the determinant along the first column:\n\\begin{align*}\n\\tan^2 \\frac{\\pi}{7} \\cdot\n\\begin{vmatrix}\n\\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{\\pi}{7} \\\\\n\\tan^2 \\frac{\\pi}{7} & \\tan^2 \\frac{2\\pi}{7}\n\\end{vmatrix}\n- \\tan^2 \\frac{3\\pi}{7} \\cdot\n\\begin{vmatrix}\n\\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{3\\pi}{7} \\\\\n\\tan^2 \\frac{\\pi}{7} & \\tan^2 \\frac{2\\pi}{7}\n\\end{vmatrix}\n+ 0 \\cdot\n\\begin{vmatrix}\n\\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{3\\pi}{7} \\\\\n\\tan^2 \\frac{2\\pi}{7} & \\tan^2 \\frac{\\pi}{7}\n\\end{vmatrix}\n\\end{align*}\n\nSimplifying the determinants:\n\\begin{align*}\n\\tan^2 \\frac{\\pi}{7} \\cdot\n\\left(\\tan^4 \\frac{2\\pi}{7} - \\tan^4 \\frac{\\pi}{7}\\right)\n- \\tan^2 \\frac{3\\pi}{7} \\cdot\n\\left(\\tan^4 \\frac{2\\pi}{7} - \\tan^2 \\frac{2\\pi}{7} \\tan^2 \\frac{3\\pi}{7}\\right)\n\\end{align*}\n\nSince the matrix has two identical rows, the determinant is zero:\n\\[ \\boxed{0} \\]",
+                    "extracted_answer": "0",
+                    "subject": "Trigonometry",
+                    "format": "Problem Solving",
+                    "difficulty": 8
+                }
+            ]
+        },
+        "Other": {
+            "count": 66358,
+            "examples": [
+                {
+                    "id": 418250,
+                    "source": "OpenMathInstruct-2",
+                    "question": "How many complex numbers $w$ satisfy the equation\n\\[\n  \\cos(w) = \\frac{w^2 + 2}{w^2 - 2} \\,,\n\\]\nwhere $|w| < 10$?",
+                    "response": "The equation involves a trigonometric function and a rational function. To simplify the problem, recall the relationship between $\\cos$ and $\\cosh$.\n\nRecall Euler's formula: $e^{ix} = \\cos(x) + i \\sin(x)$. We can express $\\cos(w)$ as:\n\\[ \\cos(w) = \\frac{e^{iw} + e^{-iw}}{2} \\]\n\nNow, notice that the right-hand side resembles the formula for the hyperbolic cosine function, $\\cosh(x) = \\frac{e^{x} + e^{-x}}{2}$.\n\nHowever, we are looking at the complex plane, so we'll consider the hyperbolic cosine function with a complex argument.\n\nTo make progress, we need to express $\\cos(w)$ in terms of $\\cosh$. Recall the identity:\n\\[ \\cos(w) = \\cosh(iw) \\]\n\nSubstitute this into the given equation:\n\\[ \\cosh(iw) = \\frac{w^2 + 2}{w^2 - 2} \\]\n\nSince we're working with complex numbers, let's express $w$ as $x + iy$, where $x$ and $y$ are real numbers.\n\nSubstituting $w = x + iy$ into the equation:\n\\[ \\cosh(i(x + iy)) = \\frac{(x + iy)^2 + 2}{(x + iy)^2 - 2} \\]\n\n\\[ \\cosh(-y + ix) = \\frac{x^2 + 2ixy - y^2 + 2}{x^2 + 2ixy - y^2 - 2} \\]\n\nNow, use the identity $\\cosh(a + ib) = \\cosh(a) \\cos(b) + i \\sinh(a) \\sin(b)$:\n\\[ \\cosh(-y) \\cos(x) + i \\sinh(-y) \\sin(x) = \\frac{x^2 + 2ixy - y^2 + 2}{x^2 + 2ixy - y^2 - 2} \\]\n\nTo make further progress, we'll assume that $x = 0$. This is because we're looking for solutions where $|w| < 10$, and for non-zero $x$, the solutions will likely be outside this range.\n\nWith $x = 0$, the equation simplifies to:\n\\[ \\cosh(-y) = \\frac{-y^2 + 2}{-y^2 - 2} \\]\n\nSince $\\cosh(-y) = \\cosh(y)$, we have:\n\\[ \\cosh(y) = \\frac{y^2 - 2}{y^2 + 2} \\]\n\nNow, solve for $y$.\n\nUsing the definition of $\\cosh(y)$, we get:\n\\[ \\frac{e^y + e^{-y}}{2} = \\frac{y^2 - 2}{y^2 + 2} \\]\n\nCross-multiplying and rearranging:\n\\[ (y^2 + 2)(e^y + e^{-y}) = 2(y^2 - 2) \\]\n\n\\[ y^2 e^y + y^2 e^{-y} + 2e^y + 2e^{-y} = 2y^2 - 4 \\]\n\nThis is a transcendental equation, and solving it analytically is challenging.\n\nHowever, we can try to find approximate solutions using numerical methods or by plotting the functions.\n\nUpon plotting or using numerical methods, we find that there are $\\boxed{10}$ solutions within the range $|w| < 10$.",
+                    "extracted_answer": "10",
+                    "subject": "Other",
+                    "format": "Problem Solving",
+                    "difficulty": 8
+                },
+                {
+                    "id": 419071,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Consider a sequence of complex numbers $z_n$ defined by the recursion $z_{n+1} = z_n^2 + c$, where $c$ is a fixed complex number and $z_1 = 0$. Compute the product $\\prod_{n=1}^{\\infty} (z_{2n-1} - z_{2n})$ for $c = -2 + 2i$.",
+                    "response": "We have $z_1 = 0$ and $z_{n+1} = z_n^2 + c$.\n\nWe are asked to find the product $\\prod_{n=1}^{\\infty} (z_{2n-1} - z_{2n})$.\n\nFirst, we compute the first few terms to see if there is a pattern:\n\\[ z_1 = 0 \\]\n\\[ z_2 = z_1^2 + c = c \\]\n\\[ z_3 = z_2^2 + c = c^2 + c \\]\n\\[ z_4 = z_3^2 + c = (c^2 + c)^2 + c \\]\n\nNow, compute $z_1 - z_2$, $z_3 - z_4$, and so on, to find a pattern:\n\\[ z_1 - z_2 = 0 - c = -c \\]\n\\[ z_3 - z_4 = (c^2 + c) - ((c^2 + c)^2 + c) = c^2 + c - c^4 - 2c^3 - c^2 - c = -c^4 - 2c^3 \\]\n\\[ = -c^2(c^2 + 2c) = -c^2(c + 2c) = -c^3(2 + c) \\]\n\nIt seems that each term is a multiple of $-c$. Factor out $-c$ from each term in the product:\n\\[ \\prod_{n=1}^{\\infty} (z_{2n-1} - z_{2n}) = (-c) \\cdot (-c^3(2 + c)) \\cdot \\ldots \\]\n\nSince $c = -2 + 2i$, we substitute this into our product:\n\\[ (-(-2 + 2i)) \\cdot (-(-2 + 2i)^3(2 + (-2 + 2i))) \\cdot \\ldots \\]\n\nHowever, there is an easier way to solve this problem.\n\nObserve that:\n\\[ z_{n+1} - z_n = z_n^2 + c - z_n = z_n^2 - z_n + c \\]\n\nThus, we have:\n\\[ z_{2n-1} - z_{2n} = z_{2n-1}^2 - z_{2n-1} + c - z_{2n} = z_{2n-1}^2 - z_{2n-1} + c - (z_{2n-1}^2 + c) = -z_{2n-1} \\]\n\nNow, our product becomes:\n\\[ \\prod_{n=1}^{\\infty} (-z_{2n-1}) = (-z_1)(-z_3)(-z_5) \\ldots \\]\n\nSubstituting $z_1 = 0$, we get:\n\\[ \\prod_{n=1}^{\\infty} (z_{2n-1} - z_{2n}) = \\boxed{0} \\]",
+                    "extracted_answer": "0",
+                    "subject": "Other",
+                    "format": "Problem Solving",
+                    "difficulty": 8
+                }
+            ]
+        },
+        "Multidisciplinary": {
+            "count": 40687,
+            "examples": [
+                {
+                    "id": 485886,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Problem:\nGiven the parametric equations of a curve\n\\[ \\begin{cases}\nx = e^t \\sin t \\\\\ny = e^{-t} \\cos t \\\\\nz = t\n\\end{cases}\n\\]\nfind the spherical coordinates $(\\rho,\\theta,\\phi)$ of the point on the curve corresponding to $t = \\ln 2$.",
+                    "response": "## Step 1: Recall the conversion formulas between Cartesian and spherical coordinates.\nThe spherical coordinates $(\\rho, \\theta, \\phi)$ can be obtained from the Cartesian coordinates $(x, y, z)$ using the following formulas:\n\\[ \\rho = \\sqrt{x^2 + y^2 + z^2} \\]\n\\[ \\theta = \\arctan\\left(\\frac{y}{x}\\right) \\]\n\\[ \\phi = \\arccos\\left(\\frac{z}{\\rho}\\right) \\]\n\n## Step 2: Substitute $t = \\ln 2$ into the parametric equations to find the Cartesian coordinates.\nGiven the parametric equations:\n\\[ x = e^t \\sin t \\]\n\\[ y = e^{-t} \\cos t \\]\n\\[ z = t \\]\nSubstitute $t = \\ln 2$:\n\\[ x = e^{\\ln 2} \\sin(\\ln 2) = 2 \\sin(\\ln 2) \\]\n\\[ y = e^{-\\ln 2} \\cos(\\ln 2) = \\frac{1}{2} \\cos(\\ln 2) \\]\n\\[ z = \\ln 2 \\]\n\n## Step 3: Calculate $\\rho$ using the formula.\n\\[ \\rho = \\sqrt{(2 \\sin(\\ln 2))^2 + \\left(\\frac{1}{2} \\cos(\\ln 2)\\right)^2 + (\\ln 2)^2} \\]\n\\[ \\rho = \\sqrt{4 \\sin^2(\\ln 2) + \\frac{1}{4} \\cos^2(\\ln 2) + (\\ln 2)^2} \\]\n\n## Step 4: Calculate $\\theta$ using the formula.\n\\[ \\theta = \\arctan\\left(\\frac{\\frac{1}{2} \\cos(\\ln 2)}{2 \\sin(\\ln 2)}\\right) \\]\n\\[ \\theta = \\arctan\\left(\\frac{\\cos(\\ln 2)}{4 \\sin(\\ln 2)}\\right) \\]\n\n## Step 5: Calculate $\\phi$ using the formula.\nFirst, we need to calculate $\\rho$ to use in the formula for $\\phi$. However, we see that calculating $\\rho$ and $\\phi$ directly from their formulas involves complex expressions. Let's simplify the calculation for $\\phi$ by directly using the Cartesian coordinates and the relationship $\\phi = \\arccos\\left(\\frac{z}{\\rho}\\right)$, which requires $\\rho$. However, we can simplify this step by noticing that $\\phi$ can be found if we know $z$ and the value of $\\rho$, but $\\rho$ is not straightforward to calculate without computational tools.\n\n## Step 6: Consider a simplification or approximation if necessary.\nGiven the complexity of calculating exact values for $\\rho$, $\\theta$, and $\\phi$ without computational tools, we recognize that a precise numerical answer would typically require a calculator. However, the instructions require following the format to the letter, which implies a simplification or a specific numerical answer might be expected where calculations are simplified or assumed to be computationally feasible.\n\nThe final answer is: $\\boxed{1}$",
+                    "extracted_answer": "1",
+                    "subject": "Multidisciplinary",
+                    "format": "Problem Solving",
+                    "difficulty": 4
+                },
+                {
+                    "id": 491156,
+                    "source": "OpenMathInstruct-2",
+                    "question": "Three identical electric dipoles are placed at the vertices of an equilateral triangle. The dipoles are aligned such that each dipole is parallel to the opposite side of the triangle. If the initial configuration stores 20 Joules of energy, how much more energy, in Joules, would be stored if the dipoles are rotated such that they are all perpendicular to the plane of the triangle?",
+                    "response": "When the dipoles are parallel to the opposite side of the triangle, the energy stored is given by the formula:\n\\[ U_{initial} = \\frac{3}{4} \\frac{p^2}{4\\pi \\epsilon_0 a^3} \\]\n\nWhen the dipoles are perpendicular to the plane of the triangle, the energy stored is given by the formula:\n\\[ U_{final} = \\frac{3}{2} \\frac{p^2}{4\\pi \\epsilon_0 a^3} \\]\n\nThe ratio of the final energy to the initial energy is:\n\\[ \\frac{U_{final}}{U_{initial}} = \\frac{\\frac{3}{2} \\frac{p^2}{4\\pi \\epsilon_0 a^3}}{\\frac{3}{4} \\frac{p^2}{4\\pi \\epsilon_0 a^3}} = 2 \\]\n\nGiven that the initial configuration stores 20 Joules of energy, the final configuration will store twice that amount:\n\\[ U_{final} = 2U_{initial} = 2(20) = 40 \\text{ Joules} \\]\n\nThe increase in energy is:\n\\[ \\Delta U = U_{final} - U_{initial} = 40 - 20 = \\boxed{20} \\text{ Joules} \\]",
+                    "extracted_answer": "20",
+                    "subject": "Multidisciplinary",
+                    "format": "Problem Solving",
+                    "difficulty": 4
+                }
+            ]
+        }
+    }
+}

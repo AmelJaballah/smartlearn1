@@ -1,0 +1,15 @@
+SUBJECTS FOUND:
+
+Algebra : 486111
+Geometry : 267182
+Calculus : 260182
+Arithmetic : 259556
+Number Theory : 212567
+Probability & Statistics : 197572
+Logic & Discrete Math : 139400
+Linear Algebra : 134709
+Pre-Algebra : 110690
+Combinatorics : 107296
+Trigonometry : 85525
+Other : 66358
+Multidisciplinary : 40687
