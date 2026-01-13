@@ -1,0 +1,72 @@
+services:
+  # Exercise Generator API
+  exercise-gen-api:
+    build:
+      context: ./AI/ExerciceGen
+      dockerfile: Dockerfile
+    container_name: exercise-gen-api
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./AI/ExerciceGen/chroma_exercises:/app/chroma_exercises
+      - ./AI/ExerciceGen/subjects_examples.json:/app/subjects_examples.json
+    environment:
+      - EXERCISE_PORT=5001
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      - HF_HUB_OFFLINE=0
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:5001/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    networks:
+      - smartlearn-network
+
+  # AI Assistant (RAG Chatbot) API
+  ai-assistant-api:
+    build:
+      context: ./AI/AI_assistant
+      dockerfile: Dockerfile
+    container_name: ai-assistant-api
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./AI/AI_assistant/chroma_db:/app/chroma_db
+    environment:
+      - RAG_PORT=5002
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      - RAG_RETRIEVER_K=3
+      - HF_HUB_OFFLINE=0
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:5002/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    networks:
+      - smartlearn-network
+
+  # SmartLearn Streamlit UI
+  smartlearn-ui:
+    build:
+      context: ./SmartLearn
+      dockerfile: Dockerfile
+    container_name: smartlearn-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - EXERCISE_API_URL=http://exercise-gen-api:5001
+      - RAG_API_URL=http://ai-assistant-api:5002
+    depends_on:
+      - exercise-gen-api
+      - ai-assistant-api
+    restart: unless-stopped
+    networks:
+      - smartlearn-network
+
+networks:
+  smartlearn-network:
+    driver: bridge
